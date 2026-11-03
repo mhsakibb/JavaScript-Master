@@ -1,11 +1,10 @@
 
-const first = [{ id: 1 }];
+const first = [1, 2, 3];
 const second = [4, 5, 6];
 
-const combined = first.concat(second);
-first[0].id = 10;
+//const combined = first.concat(second);
+const combined = [...first, 'a', ...second, 'b'];
 
-const slice = combined.slice();
+//const slice = combined.slice();
+const slice = [...combined];
 
-console.log(combined);
-console.log(slice);
